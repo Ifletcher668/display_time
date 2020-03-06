@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <script src="{% static 'scripts.js' %}"></script>
+    <title>Time Desplay</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="row">
+        <h1>Time: a Neverending Story</h1>
+      </header>
+    <main class="row">
+        <div class="border">
+          <p>Date: {{date}}</p>
+          <p>Time: {{time}}</p>
+      </div>
+    </main>
+      <footer class="row">
+        <div class="border">
+          <p>This is not a test</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
